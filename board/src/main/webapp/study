@@ -20,3 +20,7 @@
               장점이 많지만 @EqualsAndHashCode 동등성과 동일성을 비교해주는데 객체의 주소값과 상관없이 안에 들어있는 값만 비교를 하기 때문에 개발자의 의도와 달라질 수 있다고 생각한다.
   4. DTO클래스 -> @Getter/Setter를 import는 했지만 getter/setter가 만들어지지않는 오류가 생김 - 프로젝트 우클릭 / Spring / AddStarters에서 재확인후 재실행 - 적용안됨
              -> Maven Dependencies - lombok 우클릭 - Run As 실행 기존 이클립스 경로에서 sts경로로 바꿔주고 재실행하니 Getter/Setter 적용 확인 완료
+
+※ 마이바티스 연동
+  1. mapper, mybatis -> 폴더 및 xml 파일생성 - Caused by: org.xml.sax.SAXParseException: 예기치 않은 파일의 끝입니다. 에러 mybatis-config.xml 파일에 아무런 값도 넣지 않아 나오는에러
+                        <configuration> 추가로 해결
