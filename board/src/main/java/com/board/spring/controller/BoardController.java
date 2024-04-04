@@ -5,16 +5,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.servlet.http.HttpServletRequest;
 
-@Controller
+@RestController
 public class BoardController {
 	@GetMapping("/board")
-	@ResponseBody
 	public List<Map<String, Object>> boardHome(HttpServletRequest request) {
 		List<Map<String, Object>> members = new ArrayList<>();
 		
