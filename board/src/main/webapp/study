@@ -24,3 +24,4 @@
 ※ 마이바티스 연동
   1. mapper, mybatis -> 폴더 및 xml 파일생성 - Caused by: org.xml.sax.SAXParseException: 예기치 않은 파일의 끝입니다. 에러 mybatis-config.xml 파일에 아무런 값도 넣지 않아 나오는에러
                         <configuration> 추가로 해결
+                     -> Driver com.mysql.cj.jdbc.Driver claims to not accept jdbcUrl 연결 에러....
