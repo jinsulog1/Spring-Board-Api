@@ -7,8 +7,10 @@ import lombok.Setter;
 @Setter
 public class BoardDTO {
 	
+	private int seq;
 	private String name;
-	private String id;
-	private String password;
+	private int age;
+	private String title; 
+	private String content; 
 	private String addr; 
 }
