@@ -1,7 +1,6 @@
 package com.board.spring.service;
 
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,7 +15,8 @@ public class BoardService {
 	@Autowired
 	private BoardMapper boardMapper;
 	
-	public List<Map<String, Object>> list(BoardDTO boardDTO) {
-		return boardMapper.list(boardDTO);
+	public List<BoardDTO> getAllList() {
+		System.out.println("Service");
+		return boardMapper.findAll();
 	}
 }

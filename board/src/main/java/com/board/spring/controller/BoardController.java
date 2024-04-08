@@ -1,7 +1,6 @@
 package com.board.spring.controller;
 
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,9 +19,9 @@ public class BoardController {
 	BoardService boardService;
 	
 	@GetMapping("/list")
-	public List<Map<String, Object>> boardList(HttpServletRequest request) {
-		BoardDTO boardDto = new BoardDTO();
-		return boardService.list(boardDto);
+	public List<BoardDTO> list(HttpServletRequest request) {
+		System.out.println("Controller");
+		return boardService.getAllList();
 	}
 
 }
