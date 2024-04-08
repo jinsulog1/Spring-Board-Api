@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,8 +21,12 @@ public class BoardController {
 	
 	@GetMapping("/list")
 	public List<BoardDTO> list(HttpServletRequest request) {
-		System.out.println("Controller");
 		return boardService.getAllList();
 	}
+	
+//	@PostMapping("/add")
+//	public List<BoardDTO> add(HttpServletRequest request) {
+//		return boardService.getAdd();
+//	}
 
 }

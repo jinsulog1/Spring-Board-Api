@@ -16,7 +16,10 @@ public class BoardService {
 	private BoardMapper boardMapper;
 	
 	public List<BoardDTO> getAllList() {
-		System.out.println("Service");
 		return boardMapper.findAll();
 	}
+	
+//	public List<BoardDTO> add() {
+//		return boardMapper.add();
+//	}
 }

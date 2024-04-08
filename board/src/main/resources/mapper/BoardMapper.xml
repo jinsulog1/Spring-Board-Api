@@ -2,12 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.board.spring.mapper.BoardMapper">
 <select id="findAll" parameterType="com.board.spring.dto.BoardDTO" resultType="com.board.spring.dto.BoardDTO">
-SELECT SEQ 
+SELECT ID 
 	 , NAME 
 	 , AGE
 	 , TITLE
 	 , CONTENT
 	 , ADDR
   FROM BOARD
+ ORDER BY ID DESC
 </select>
 </mapper>
